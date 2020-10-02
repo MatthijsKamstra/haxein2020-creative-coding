@@ -1,0 +1,17 @@
+# -lib cc-sketch
+# -cp src
+# -D analyzer-optimize
+# -main Main
+# --interp
+
+
+-lib cc-sketch
+-cp src
+-main Main
+-js docs/cc_mck.js
+-D source-map-content
+-D state=debug
+-D analyzer-optimize
+--dce full
+-debug
+--cmd cp .template/index.html docs/
